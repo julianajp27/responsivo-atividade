@@ -1,0 +1,67 @@
+body {
+    background-color: #141414; /* Preto Netflix */
+    color: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.logo {
+    color: #e50914; /* Vermelho Netflix */
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.search-box {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    padding: 15px;
+    width: 300px;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover { background-color: #f40612; }
+
+/* Estilo do Card de Filme */
+.netflix-card {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #181818;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    display: none; /* Só aparece quando buscar */
+}
+
+.netflix-card img {
+    width: 100%;
+    border-bottom: 3px solid #e50914;
+}
+
+.info { padding: 20px; text-align: left; }
+.info h2 { margin-top: 0; }
+.rating { color: #46d369; font-weight: bold; }
