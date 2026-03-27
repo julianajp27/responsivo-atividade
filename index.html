@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflux - Juliana Jardim</title>
+    <meta name="description" content="Netflux - O buscador de filmes e séries PWA de Juliana">
+    <meta name="theme-color" content="#e50914">
+    <title>Netflux PRO</title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2503/2503508.png">
 </head>
 <body>
     <header>
         <div class="logo">NETFLUX</div>
-        <p>Filmes, séries e muito mais. Sem limites.</p>
+        <p>Ache filmes e séries. Saiba onde assistir.</p>
     </header>
 
-    <div class="search-box">
-        <input type="text" id="movieInput" placeholder="O que você quer assistir hoje?">
-        <button onclick="searchMovie()">BUSCAR</button>
-    </div>
-
-    <div id="result" class="netflix-card">
+    <main>
+        <div class="search-box">
+            <input type="text" id="movieInput" placeholder="Digite o nome (ex: Stranger Things)" aria-label="Buscar filme ou série">
+            <button onclick="searchMovie()">BUSCAR</button>
         </div>
+
+        <div id="result" class="netflix-card"></div>
+    </main>
 
     <script src="script.js"></script>
 </body>
